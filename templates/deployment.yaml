@@ -22,7 +22,7 @@ spec:
       nodeSelector:
       #        cloud.google.com/gke-nodepool: node-pool-ane-ab
       containers:
-        - image: {{ .Values.image.api-gateway }}
+        - image: {{ .Values.image.api_gateway }}
           imagePullPolicy: Always
           name: api-gateway
           ports:
