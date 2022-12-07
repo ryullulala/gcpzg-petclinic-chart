@@ -3,3 +3,5 @@ image:
   customers: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/spring-petclinic-customers-service:a884d55
   vets: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/spring-petclinic-vets-service:8d43823
   visits: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/spring-petclinic-visits-service:b736e35
+
+hostinfo: 10.182.103.2:3306
