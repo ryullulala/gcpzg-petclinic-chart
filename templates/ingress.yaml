@@ -5,7 +5,7 @@ metadata:
   annotations:
     "helm.sh/hook": pre-install
     "helm.sh/hook-weight": "-5"
-  name: gcpzg-cert
+  name: mcrt-bf502b18-d48d-44f8-8ef6-61164a4cbc78
 spec:
   domains:
     - www.petclinic.shop
