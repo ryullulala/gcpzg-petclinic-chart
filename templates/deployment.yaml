@@ -63,7 +63,7 @@ spec:
       nodeSelector:
       #        cloud.google.com/gke-nodepool: node-pool-ane-ab
       containers:
-        - image: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/spring-petclinic-customers-service:a884d55
+        - image: {{ .Values.image.customers }}
           imagePullPolicy: Always
           name: customers
           ports:
@@ -122,7 +122,7 @@ spec:
       nodeSelector:
       #        cloud.google.com/gke-nodepool: node-pool-ane-ab
       containers:
-        - image: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/spring-petclinic-vets-service:8d43823
+        - image: {{ .Values.image.vets }}
           imagePullPolicy: Always
           name: vets
           ports:
@@ -181,7 +181,7 @@ spec:
       nodeSelector:
       #        cloud.google.com/gke-nodepool: node-pool-ane-ab
       containers:
-        - image: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/spring-petclinic-visits-service:b736e35
+        - image: {{ .Values.image.visits }}
           imagePullPolicy: Always
           name: visits
           ports:

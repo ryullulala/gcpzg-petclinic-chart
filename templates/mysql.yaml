@@ -4,7 +4,7 @@ kind: ConfigMap
 metadata:
   annotations:
     "helm.sh/hook": pre-install
-    "helm.sh/hook-weight": "-4"
+    "helm.sh/hook-weight": "-1"
   name: mysql-config
   labels:
     app: spring-petclinic
@@ -16,7 +16,7 @@ kind: Secret
 metadata:
   annotations:
     "helm.sh/hook": pre-install
-    "helm.sh/hook-weight": "-4"
+    "helm.sh/hook-weight": "-1"
   name: mysql-credential
   labels:
     app: spring-petclinic
