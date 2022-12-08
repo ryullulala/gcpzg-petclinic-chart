@@ -16,7 +16,7 @@ spec:
 
   destination:
     server: 'https://34.64.254.226'
-    namespace: gcpzg
+    namespace: prod
 
   syncPolicy:
     syncOptions:
