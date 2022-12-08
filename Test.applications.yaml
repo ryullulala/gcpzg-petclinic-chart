@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd
+  name: petclinic-test
   namespace: argocd
 spec:
   project: default
@@ -15,7 +15,7 @@ spec:
         - Test.values.yaml
 
   destination:
-    server: 'https://34.64.153.160'
+    server: 'https://kubernetes.default.svc'
     namespace: gcpzg
 
   syncPolicy:
