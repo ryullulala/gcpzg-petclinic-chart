@@ -12,10 +12,10 @@ spec:
     targetRevision: HEAD
     helm:
       valueFiles:
-        - values.yaml
+        - Test.values.yaml
 
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: 'https://34.64.153.160'
     namespace: gcpzg
 
   syncPolicy:
