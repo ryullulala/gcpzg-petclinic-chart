@@ -15,7 +15,7 @@ spec:
         - Prod.values.yaml
 
   destination:
-    server: 'https://34.64.254.226'
+    server: 'https://34.64.73.144'
     namespace: prod
 
   syncPolicy:
