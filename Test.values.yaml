@@ -1,6 +1,6 @@
 image:
   api_gateway: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/spring-petclinic-api-gateway:ff260c3
-  customers: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/spring-petclinic-customers-service:a884d55
+  customers: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/spring-petclinic-customers-service:a89341f
   vets: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/spring-petclinic-vets-service:02cf505
   visits: asia-northeast3-docker.pkg.dev/hyunyoung-01-368306/gcpzg/spring-petclinic-visits-service:6de1c22
 
