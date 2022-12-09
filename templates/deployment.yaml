@@ -30,10 +30,10 @@ spec:
           resources:
             requests:
               cpu: "100m"
-              memory: "200"
+              memory: "200Mi"
             limits:
               cpu: "200m"
-              memory: "500"
+              memory: "500Mi"
           readinessProbe:
             httpGet:
               path: /actuator
@@ -91,10 +91,10 @@ spec:
           resources:
             requests:
               cpu: "100m"
-              memory: "200"
+              memory: "200Mi"
             limits:
               cpu: "200m"
-              memory: "500"
+              memory: "500Mi"
           readinessProbe:
             httpGet:
               path: /actuator
@@ -152,10 +152,10 @@ spec:
           resources:
             requests:
               cpu: "200m"
-              memory: "200"
+              memory: "200Mi"
             limits:
               cpu: "200m"
-              memory: "500"
+              memory: "500Mi"
           readinessProbe:
             httpGet:
               path: /actuator
@@ -213,10 +213,10 @@ spec:
           resources:
             requests:
               cpu: "200m"
-              memory: "200"
+              memory: "200Mi"
             limits:
               cpu: "200m"
-              memory: "500"
+              memory: "500Mi"
           readinessProbe:
             httpGet:
               path: /actuator
