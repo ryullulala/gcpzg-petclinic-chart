@@ -29,9 +29,11 @@ spec:
             - containerPort: 8080
           resources:
             requests:
-              cpu: "200m"
+              cpu: "100m"
+              memory: "200"
             limits:
               cpu: "200m"
+              memory: "500"
           readinessProbe:
             httpGet:
               path: /actuator
@@ -88,9 +90,11 @@ spec:
               value: mysql
           resources:
             requests:
-              cpu: "200m"
+              cpu: "100m"
+              memory: "200"
             limits:
               cpu: "200m"
+              memory: "500"
           readinessProbe:
             httpGet:
               path: /actuator
@@ -148,8 +152,10 @@ spec:
           resources:
             requests:
               cpu: "200m"
+              memory: "200"
             limits:
               cpu: "200m"
+              memory: "500"
           readinessProbe:
             httpGet:
               path: /actuator
@@ -207,8 +213,10 @@ spec:
           resources:
             requests:
               cpu: "200m"
+              memory: "200"
             limits:
               cpu: "200m"
+              memory: "500"
           readinessProbe:
             httpGet:
               path: /actuator
