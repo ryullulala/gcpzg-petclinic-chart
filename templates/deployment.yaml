@@ -29,11 +29,11 @@ spec:
             - containerPort: 8080
           resources:
             requests:
-              cpu: "200m"
-              memory: "200Mi"
+              cpu: {{ .Values.resources.requests.cpu }}
+              memory: {{ .Values.resources.requests.memory }}
             limits:
-              cpu: "400m"
-              memory: "500Mi"
+              cpu: {{ .Values.resources.limits.cpu }}
+              memory: {{ .Values.resources.limits.memory }}
           readinessProbe:
             httpGet:
               path: /actuator
@@ -90,11 +90,11 @@ spec:
               value: mysql
           resources:
             requests:
-              cpu: "200m"
-              memory: "200Mi"
+              cpu: {{ .Values.resources.requests.cpu }}
+              memory: {{ .Values.resources.requests.memory }}
             limits:
-              cpu: "400m"
-              memory: "500Mi"
+              cpu: {{ .Values.resources.limits.cpu }}
+              memory: {{ .Values.resources.limits.memory }}
           readinessProbe:
             httpGet:
               path: /actuator
@@ -151,11 +151,11 @@ spec:
               value: mysql
           resources:
             requests:
-              cpu: "200m"
-              memory: "200Mi"
+              cpu: {{ .Values.resources.requests.cpu }}
+              memory: {{ .Values.resources.requests.memory }}
             limits:
-              cpu: "400m"
-              memory: "500Mi"
+              cpu: {{ .Values.resources.limits.cpu }}
+              memory: {{ .Values.resources.limits.memory }}
           readinessProbe:
             httpGet:
               path: /actuator
@@ -212,11 +212,11 @@ spec:
               value: mysql
           resources:
             requests:
-              cpu: "200m"
-              memory: "200Mi"
+              cpu: {{ .Values.resources.requests.cpu }}
+              memory: {{ .Values.resources.requests.memory }}
             limits:
-              cpu: "400m"
-              memory: "500Mi"
+              cpu: {{ .Values.resources.limits.cpu }}
+              memory: {{ .Values.resources.limits.memory }}
           readinessProbe:
             httpGet:
               path: /actuator
