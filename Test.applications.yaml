@@ -15,7 +15,7 @@ spec:
         - Test.values.yaml
 
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: 'https://34.64.182.56'
     namespace: test
 
   syncPolicy:
