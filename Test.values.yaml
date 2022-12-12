@@ -10,8 +10,8 @@ domain: test.petclinic.shop
 
 resources:
   requests:
-    cpu: "200m"
-    memory: "200Mi"
+    cpu: "100m"
+    memory: "150Mi"
   limits:
-    cpu: "200m"
-    memory: "200Mi"
+    cpu: "150m"
+    memory: "150Mi"
