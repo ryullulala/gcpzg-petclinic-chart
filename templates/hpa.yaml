@@ -4,8 +4,8 @@ kind: HorizontalPodAutoscaler
 metadata:
   name: hpa-api-gateway
 spec:
-  maxReplicas: 8
-  minReplicas: 4
+  maxReplicas: {{ .Values.maxReplicas }}
+  minReplicas: {{ .Values.minReplicas }}
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
@@ -17,8 +17,8 @@ kind: HorizontalPodAutoscaler
 metadata:
   name: hpa-customers
 spec:
-  maxReplicas: 8
-  minReplicas: 3
+  maxReplicas: {{ .Values.maxReplicas }}
+  minReplicas: {{ .Values.minReplicas }}
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
@@ -43,8 +43,8 @@ kind: HorizontalPodAutoscaler
 metadata:
   name: hpa-visits
 spec:
-  maxReplicas: 6
-  minReplicas: 2
+  maxReplicas: {{ .Values.maxReplicas }}
+  minReplicas: {{ .Values.minReplicas }}
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
