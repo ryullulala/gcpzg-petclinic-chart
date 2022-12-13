@@ -18,5 +18,5 @@ resources:
 
 replicas: 1
 
-maxReplicas: 3
+maxReplicas: 1
 minReplicas: 1
