@@ -17,3 +17,6 @@ resources:
     memory: "500Mi"
 
 replicas: 3
+
+maxReplicas: 5
+minReplicas: 2
